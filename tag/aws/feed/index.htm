@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>AWS Archives | Highstreet.io</title>
+	<atom:link href="https://highstreet.io/tag/aws/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description></description>
+	<lastBuildDate>Tue, 01 Aug 2023 17:53:17 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>https://highstreet.io/wp-content/uploads/2020/06/highstreet-io-site-icon-512.png</url>
+	<title>AWS Archives | Highstreet.io</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How Highstreet.io Protects Users with Cognito MFA</title>
+		<link>https://highstreet.io/aws-cognito-multi-factor-authentication/</link>
+		
+		<dc:creator><![CDATA[Highstreet.io]]></dc:creator>
+		<pubDate>Wed, 07 Dec 2022 08:00:58 +0000</pubDate>
+				<category><![CDATA[Highstreet.io News]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[Highstreet.io Infrastructure]]></category>
+		<guid isPermaLink="false">https://highstreet.io/?p=14190</guid>
+
+					<description><![CDATA[<p>The tools you use to manage your eCommerce business are as valuable as the keys to a flagship store. Those systems contain priceless information about your inventory, your orders, and your product feed that connect to online marketplaces and essential digital channels. That’s why they need to be protected with the kind of security that [&#8230;]</p>
+<p>The post <a href="https://highstreet.io/aws-cognito-multi-factor-authentication/">How Highstreet.io Protects Users with Cognito MFA</a> appeared first on <a href="https://highstreet.io">Highstreet.io</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span style="font-weight: 400;">The tools you use to manage your eCommerce business are as valuable as the keys to a flagship store. Those systems contain priceless information about your inventory, your orders, and your </span><a href="https://highstreet.io/how-data-feed-management-enhances-your-digital-marketing-strategy/"><span style="font-weight: 400;">product feed that connect to online marketplaces and essential digital channels</span></a><span style="font-weight: 400;">.</span></p>
+<p>That’s why they need to be protected with the kind of security that AWS Cognito MFA (multi-factor authentication) can provide.</p>
+<p><span style="font-weight: 400;">Much like showing an employee identification card when you show up in an office, authentication technologies are a way to confirm that only authorized people are logging into your backend infrastructure.<br />
+For years, authentication was often limited to the use of passwords, even though they were often forgotten by employees and easy to guess by cybercriminals.</span></p>
+<p><span style="font-weight: 400;"><strong>Multi-factor authentication (MFA) provides additional layers of protection to digital platforms</strong> by requiring additional credentials. These could include something you know, such as a PIN, sending a text to your smartphone, or even scanning biometric data like your fingerprint or your face.</span></p>
+<p><span style="font-weight: 400;">At Highstreet.io, we’re reducing the burden on brands to<strong> focus on security and offer peace of mind by standardizing our user authentication</strong> based on AWS Cognito MFA.</span></p>
+<p>This post offers some more detail on our approach, and why it will let you spend more time on the products you’re selling and the customers you’re serving.</p>
+<h2><span style="font-weight: 400;">Platform Authentication – A Technical Choice Using AWS</span></h2>
+<p><span style="font-weight: 400;">We’ve standardized on AWS Cognito MFA because it was purposely designed to help organizations authenticate and manage users whether they’re looking into a web portal or a mobile app.</span></p>
+<p><span style="font-weight: 400;">In Highstreet.io’s case, the main component for authentication is based on a directory of people who will need to access the platform, which is called a user pool.</span></p>
+<p>This provides a seamless way to manage each user’s profile while also checking for suspicious activity such as an attempt by a hacker to take over someone’s account or to verify a credential like an e-mail address.</p>
+<p><span style="font-weight: 400;">We like Cognito MFA because it’s scalable as more users get added, and it also allows customization at the user interface (UI) level, which means we can provide a front end that’s familiar and easy to use.</span></p>
+<h2><span style="font-weight: 400;">Components of the Infrastructure Authentication</span></h2>
+<p>When you put a key in a lock, you don’t usually get to see the gears and other components that turn and allow you to open a door. The diagram below provides an insider view of what happens when your users are logging into Highstreet.io.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-14191" src="https://highstreet.io/wp-content/uploads/2022/12/HS-authentication.drawio.jpg" alt="HS authentication drawio" width="750" height="360" srcset="https://highstreet.io/wp-content/uploads/2022/12/HS-authentication.drawio.jpg 750w, https://highstreet.io/wp-content/uploads/2022/12/HS-authentication.drawio-480x230.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 750px, 100vw" /></p>
+<p><span style="font-weight: 400;">The system makes use of Amazon Elastic Container Service (ECS), which are environments where application programming interfaces (APIs) can be created and run in isolation from the underlying hardware.</span></p>
+<p><span style="font-weight: 400;">When you’re trying to authenticate who you are, the user pool grants tokens that authorize requests that get made to the containerized HTTP API.</span></p>
+<p><span style="font-weight: 400;">Once you’ve been authenticated, you can dive into Highstreet.io and begin </span><a href="https://highstreet.io/new-omnichannel-shopping-experience-retailers/"><span style="font-weight: 400;">configuring your product feeds</span></a><span style="font-weight: 400;"> for more accurate ads, marketplace listings, and more.</span></p>
+<h2><span style="font-weight: 400;">Infrastructure as Code</span></h2>
+<p><span style="font-weight: 400;">Keeping this kind of backend infrastructure with the needs of a business would have traditionally required a lot of time and effort, but Highstreet.io’s use of infrastructure has changed all that.</span></p>
+<p><span style="font-weight: 400;">What is infrastructure as code? Think of it as a way of using coding to automate complex processes rather than relying on manual (and often error-prone work).</span></p>
+<p><span style="font-weight: 400;">More specifically, we learn about Terraform’s infrastructure as code software to create, change and improve our user authentication.</span></p>
+<h2><span style="font-weight: 400;">Where Highstreet.io stands: What you get as a Customer</span></h2>
+<p><span style="font-weight: 400;">Combining infrastructure as code with AWS Cognito MFA, we’re able to provide a<strong> cost-effective, high-speed, consistent, and secure user authentication experience</strong> that benefits all our customers.</span></p>
+<p><span style="font-weight: 400;">Having complete control and visibility over who’s logging on at all times also means Highstreet.io can continuously improve our approach to AWS Cognito multi-factor authentication.<br />
+Terraform helps us keep track of versioning so that changes to the underlying infrastructure can happen incrementally, as new eCommerce needs emerge.</span></p>
+<p><span style="font-weight: 400;">You might not think about how users are logging into Highstreet.io on a day-to-day basis, or whether your organization is at any risk of an IT security incident. That’s a good sign we’re doing our jobs right – and another great reason to count on us as a <strong>trusted feed management partner.</strong></span></p>
+<p>&nbsp;</p>
+<p><a href="https://highstreet.io/contact-us/"><span style="font-weight: 400;"><strong>Contact us to learn more about Highstreet.io’s best-in-class technology team</strong></span></a><span style="font-weight: 400;"> and how we can help you accelerate your business growth. </span></p>
+<p>The post <a href="https://highstreet.io/aws-cognito-multi-factor-authentication/">How Highstreet.io Protects Users with Cognito MFA</a> appeared first on <a href="https://highstreet.io">Highstreet.io</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
